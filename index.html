@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="denis.css">
+</head>
+<body>
+    <div class="ibindi">
+    <div class="image">
+        &nbsp;
+    <center><img src="curimg.GIF" height="50px" width="40px">
+    <p style="font-family: sans-serif;">Make your Calculation</p>
+</div>
+    <div class="deni">
+    <h1 style="font-family: sans-serif;" >Choose the option symbols to get calculation</h1>
+</center>
+      <div class="bindi"  >   
+      <label for="enter first number"><b>Enter first number:</b></label>
+<input type="number" name="number2" id="n1"><br><br>
+<label for="enter first number"><b>Enter second number:</b></label>
+<input type="number" name="number2" id="n2"><br/><br/>
+<label for="choose symbol">Choose symbol <select name="" id="operators">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="/">/</option>
+    <option value="*">x</option>
+    </select> <button onclick="calcu()">=</button></td>  
+    <input type="text" id="result"></label></div> 
+<br><br> 
+<div class="img">
+  <img src="Capture.PNG" height="130px" width="250px">
+  </div>
+</div>
+<script>
+    function calcu(){
+
+    var  n1=parseInt(document.getElementById("n1").value);
+    var n2=parseInt(document.getElementById("n2").value);
+    var oper=document.getElementById("operators").value;
+    if(oper === "+"){
+    document.getElementById("result").value=n1+n2;
+    }
+    if(oper === "-"){
+    document.getElementById("result").value=n1-n2;
+    }   if(oper === "/"){
+    document.getElementById("result").value=n1/n2;
+    }   if(oper === "*"){
+    document.getElementById("result").value=n1*n2;
+    }
+}
+
+</script>
+</div>
+<footer>
+    <div class="footer">
+    <p>Allhglights By Felix Denis</p></div>
+</footer>
+</html>
